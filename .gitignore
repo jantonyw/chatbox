@@ -60,9 +60,13 @@ typings/
 # dotenv environment variables file
 .env
 .env.test
+.env.license
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
+
+# Metro cache for the React Native smoke workspace (see METRO_CACHE_ROOT)
+.metro-cache
 
 # next.js build output
 .next
@@ -90,6 +94,7 @@ out/
 
 publish.sh
 build.sh
+build-web.sh
 
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
@@ -100,6 +105,7 @@ build.sh
 
 # testing
 /coverage
+/test/output
 
 # next.js
 /.next/
@@ -107,6 +113,7 @@ build.sh
 
 # production
 /build
+/.toolchain
 
 # misc
 .DS_Store
@@ -123,6 +130,7 @@ yarn-error.log*
 
 # IDE / Editor
 .idea
+.dir-locals.el
 
 # vercel
 .vercel
@@ -132,3 +140,71 @@ yarn-error.log*
 next-env.d.ts
 
 tmp
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Coverage directory used by tools like istanbul
+coverage
+.eslintcache
+
+# Dependency directory
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+node_modules
+
+# OSX
+.DS_Store
+
+release/app/dist
+release/build
+.erb/dll
+
+.idea
+npm-debug.log.*
+*.css.d.ts
+*.sass.d.ts
+*.scss.d.ts
+
+dist
+
+electron-builder.env
+
+# Share VS Code settings
+# .vscode
+
+
+**/routeTree.gen.ts
+
+.env.sentry-build-plugin
+
+temp.md
+/output/playwright/
+.playwright-cli/
+node-compile-cache/
+
+*storybook.log
+storybook-static
+.gstack/
+.worktrees/
+.claude/worktrees/
+
+todo.md
+plan.md
+tmp-*.*
+tmp_*.*
+/docs/superpowers/plans
+
+# Local pnpm store accidentally created by pnpm install in worktrees
+.pnpm-store/
+
+/src/shared/mobile-work/generated/
+
+# Local headless evaluation artifacts
+/jobs/
+/scripts/terminal_bench/__pycache__/
